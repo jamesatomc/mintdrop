@@ -1,8 +1,8 @@
 /**
- * アドレスを短く表示するためのメソッド
- * @param address 
- * @param digits 
- * @returns 
+ * Method for displaying addresses briefly
+ * @param address
+ * @param digits
+ * @returns
  */
 export const shortenAddress = (
   address: string, 
