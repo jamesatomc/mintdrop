@@ -1,35 +1,35 @@
 # Sui-NFT-Dapp
 
-Sui Network 上で動く簡易マーケットプレイス dapp 用リポジトリです。
+This is a repository for a simple marketplace dapp that runs on Sui Network.
 
-## 動かし方
+## How to move
 
-- コントラクトのビルド
+- Build the contract
 
-  ```bash
+  ````bash
   pnpm contract run build
-  ```
+  ````
 
-- コントラクトのテスト
+- Testing the contract
 
-  ```bash
+  ````bash
   pnpm contract run test
-  ```
+  ````
 
-- コントラクトのデプロイ
+- Deploy the contract
 
-  ```bash
+  ````bash
   pnpm contract run deploy
-  ```
+  ````
 
-- フロントエンドのビルド
+- Frontend build
 
-  ```bash
+  ````bash
   pnpm frontend run build
-  ```
+  ````
 
-- フロントエンドの起動
+- Start the front end
 
-  ```bash
+  ````bash
   pnpm frontend run start
-  ```
+  ````
