@@ -1,20 +1,19 @@
-
 import { NETWORK } from "../config/constants";
 
-// ブロックチェーンエクスプローラーのリンク
+// Blockchain explorer link
 const ExplorerBase = "https://explorer.sui.io";
 
-// トランザクションまでのリンク
+// link to transaction
 export function TransacitonLink(digest: string, module: string) {
     return `${ExplorerBase}/txblock/${digest}?module=${module}&network=${NETWORK}`
 }
 
-// オブジェクトまでのリンク
+// link to object
 export function ObjectLink(objectId: string) {
     return `${ExplorerBase}/object/${objectId}?network=${NETWORK}`;
 }
 
-// パッケージまでのリンク
+// link to package
 export function PackageLink(packageId: string) {
     return `${ExplorerBase}/object/${packageId}?network=${NETWORK}`;
 }
