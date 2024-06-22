@@ -64,7 +64,7 @@ const Page = () => {
   }
 
   /**
-  * 左列用のコンポーネント
+  * Component for left column
   * @returns
   */
   const Navbar = () => (
