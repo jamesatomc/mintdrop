@@ -3,24 +3,24 @@ import { useState } from 'react';
 import { moveCallTransferNft } from "./../../suitterLib/moveCall";
 
 /**
- * NFTCard コンポーネント
- * @param id NFTのオブジェクトID
+ * NFTCard component
+ * @param id NFT object ID
  */
-const NftCard = (props: { 
+const NftCard = (props: {
   id: string,
   name: string,
   description: string,
-  url: string,
+  URL: string,
   setIsLoading: any,
   signAndExecuteTransactionBlock: any,
 }) => {
   const [toAddress, setToAddress] = useState<string>("");
 
-  // トランザクションオブジェクトを生成
+  //Create transaction object
   const tx = new TransactionBlock();
   
   /**
-   * NFTをTransferするメソッド
+   * Method to transfer NFT
    */
   const handleTransfer = async () => {
     props.setIsLoading(true);
@@ -32,7 +32,7 @@ const NftCard = (props: {
     });
 
     try {
-      // トランザクションに署名＆送信
+      // Sign & send transaction
       await props.signAndExecuteTransactionBlock({ 
         transactionBlock: tx 
       });
