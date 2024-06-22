@@ -1,26 +1,26 @@
-# NFT コントラクト
+# NFT contract
 
-## 動かし方
+## How to move
 
-- コントラクトのビルド
+- Build the contract
 
-  ```bash
+  ````bash
   sui move build
-  ```
+  ````
 
-- コントラクトのテスト
+- Testing the contract
 
-  ```bash
+  ````bash
   sui move test
-  ```
+  ````
 
-- コントラクトのデプロイ
+- Deploy the contract
 
-  ```bash
+  ````bash
   sui client publish --gas-budget 100000000 --skip-dependency-verification
-  ```
+  ````
 
-  実行結果
+  Execution result
 
   ```bash
   ----- Transaction Digest ----
