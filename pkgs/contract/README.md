@@ -97,10 +97,10 @@
   ]
   ```
 
-  エクスプローラー上のデータ
+Data on Explorer
 
-  - パッケージ ID
+  - Package ID
     [0xc67af7a8c787d95c0d4ce650cbd46022cdb6b917faa0ee1020b2fb4719c95858](https://suiscan.com/object/0xc67af7a8c787d95c0d4ce650cbd46022cdb6b917faa0ee1020b2fb4719c95858?network=testnet)
 
-  - オブジェクト ID
+  - Object ID
     [0x414c39a799b14ef1a4dc400bb98846eca7a42bb77f2a59fc503516a198e9f30f](https://suiscan.com/object/0x414c39a799b14ef1a4dc400bb98846eca7a42bb77f2a59fc503516a198e9f30f?network=testnet)
