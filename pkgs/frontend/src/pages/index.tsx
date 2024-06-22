@@ -12,7 +12,7 @@ import { NFTType } from 'src/suitterLib/types';
 import { moveCallMintNft } from "./../suitterLib/moveCall";
 
 /**
- * Pageコンポーネント
+ *Page component
  * @returns
  */
 const Page = () => {
@@ -24,19 +24,19 @@ const Page = () => {
     signAndExecuteTransactionBlock
   } = useWallet();
 
-  // トランザクションオブジェクトを生成
+  //Create transaction object
   const tx = new TransactionBlock();
 
   /**
-   * NFTを取得するためのメソッド
-   */
+  * Method to obtain NFT
+  */
   const getNfts = async () => {
     getAssets(address!, setNfts);
   }
 
   /**
-   * NFTをミントするメソッド
-   */
+  * Methods to mint NFTs
+  */
   const mint = async() => {
     setIsLoading(true);
     // moveCallTransferNft
@@ -48,7 +48,7 @@ const Page = () => {
     });
 
     try {
-      // トランザクションに署名＆送信
+      // Sign & send transaction
       await signAndExecuteTransactionBlock({
         // @ts-ignore
         transactionBlock: tx,
@@ -64,9 +64,9 @@ const Page = () => {
   }
 
   /**
-   * 左列用のコンポーネント
-   * @returns
-   */
+  * 左列用のコンポーネント
+  * @returns
+  */
   const Navbar = () => (
       <div
           className="backdrop-blur-3xl flex justify-between items-center top-0 left-0 w-full z-10 h-20 px-4 text-white fixed nav">
@@ -80,7 +80,7 @@ const Page = () => {
   )
 
     /**
-     * 中央列用のコンポーネント
+     * Component for center column
      * @returns
      */
     const CenterPart = () => {
